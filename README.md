@@ -1,10 +1,10 @@
-# 🎟️ Simulación de Reservas Concurrentes
+# Simulación de Reservas Concurrentes
 
 Este proyecto fue desarrollado para el curso **Bases de Datos 1 (CC3088)** de la Universidad del Valle de Guatemala. El objetivo es simular múltiples usuarios intentando reservar el mismo asiento en un evento, aplicando conceptos de **transacciones**, **bloqueos** y **niveles de aislamiento** en PostgreSQL usando concurrencia con Go.
 
 ---
 
-## 🧰 Requisitos
+## Requisitos
 
 Asegúrate de tener lo siguiente instalado antes de ejecutar el programa:
 
@@ -13,7 +13,7 @@ Asegúrate de tener lo siguiente instalado antes de ejecutar el programa:
 
 ---
 
-## ⚙️ Configuración
+## Configuración
 
 En el archivo `main.go` se encuentran las siguientes constantes para conectarse a la base de datos:
 
@@ -28,7 +28,7 @@ const (
 
 ---
 
-## 🚀 Ejecución
+## Ejecución
 
 Una vez clonado el repositorio y configurado el DSN correctamente, simplemente ejecuta el siguiente comando en la raíz del proyecto:
 
@@ -36,13 +36,13 @@ Una vez clonado el repositorio y configurado el DSN correctamente, simplemente e
 go run .
 ```
 
-🔄 El programa preguntará si deseas reiniciar la base de datos. Si respondes `s`, ejecutará automáticamente los scripts `ddl.sql` y `data.sql` para crear las tablas y poblar los datos de prueba.
+El programa preguntará si deseas reiniciar la base de datos. Si respondes `s`, ejecutará automáticamente los scripts `ddl.sql` y `data.sql` para crear las tablas y poblar los datos de prueba.
 
-📦 También se encargará de crear la base de datos `Proyecto_2` si no existe, por lo que no necesitas crearla manualmente.
+También se encargará de crear la base de datos `Proyecto_2` si no existe, por lo que no necesitas crearla manualmente.
 
 ---
 
-## 🗂️ Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 ├── db/
@@ -55,7 +55,7 @@ go run .
 
 ---
 
-## 🔍 ¿Qué hace el programa?
+## ¿Qué hace el programa?
 
 - Ejecuta una simulación de múltiples usuarios intentando reservar asientos de manera concurrente.
 - Utiliza hilos (`goroutines`) y transacciones en PostgreSQL.
